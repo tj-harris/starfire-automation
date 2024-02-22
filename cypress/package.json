@@ -1,0 +1,15 @@
+{
+  "name": "starfire-cypress",
+  "version": "1.0.0",
+  "description": "Take json input and create starfire entries",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.5",
+    "dayjs": "^1.11.10"
+  }
+}
