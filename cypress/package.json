@@ -4,11 +4,12 @@
   "description": "Take json input and create starfire entries",
   "main": "index.js",
   "scripts": {
-    "cypress": "cypress"
+    "cypress": "dotenvx run -- cypress"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@dotenvx/dotenvx": "^0.25.1",
     "cypress": "^13.6.5",
     "dayjs": "^1.11.10"
   }

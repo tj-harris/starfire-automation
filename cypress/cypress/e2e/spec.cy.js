@@ -7,6 +7,7 @@ describe('add entries for today', () => {
       .get("#Password").type(Cypress.env('password'))
       .get('button[type="submit"]').click();
       cy.fixture('entries.json').then((e) => {
+        cy.log("Adding entry for: " + JSON.stringify(e));
         e.map(x => {
           cy.visit('/');
           const dateDiff = dayjs(x.date).diff(dayjs().startOf('week'), 'days');
